@@ -26,7 +26,7 @@ Read in this order:
 | 2 | [`docs/RESEARCH.md`](docs/RESEARCH.md) | The research agent's full findings: real studio/gallery site patterns, 2025-2026 trends, typography/color/accessibility notes | Grounds the "why" behind the backlog and design choices below |
 | 3 | [`docs/BACKLOG.md`](docs/BACKLOG.md) | Both BAs' full backlogs: personas, user journeys, MoSCoW priorities, user stories, admin upload workflow, content taxonomy, NFRs | The feature scope of record — what the site needs to do |
 | 4 | [`docs/DESIGN.md`](docs/DESIGN.md) | Both designers' full visual specs: palette, type, layout, components, mood, for "Soft & Painterly" and "Bold & Modern Gallery" | The two visual directions to compare and choose (or blend) between |
-| — | [Design canvas ↗](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu) | 6 visual mockup artboards (style guide + homepage + gallery page, for each of the two directions, side by side) | See the two directions rendered, not just described in prose — **may still be in progress; confirm it's finished before treating it as final** (see below) |
+| — | [Design canvas ↗](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu) | 6 visual mockup artboards (style guide + homepage + gallery page, for each of the two directions, side by side) | See the two directions rendered, not just described in prose |
 
 ## What's completed
 
@@ -36,7 +36,7 @@ Read in this order:
 - [x] Designer 1's "Soft & Painterly" full visual spec (`docs/DESIGN.md`)
 - [x] Designer 2's "Bold & Modern Gallery" full visual spec (`docs/DESIGN.md`)
 - [x] All of the above written up, committed, and pushed to this repo
-- [ ] Design canvas artboards (style guide + homepage + gallery mockup, ×2 directions) — being populated by the orchestrating session; **not yet confirmed complete as of this writing**, don't assume all 6 are finished without checking the canvas directly
+- [x] Design canvas populated with all 6 artboards (style guide + homepage + gallery mockup, ×2 directions) — [view it here](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu). Note: the canvas is a private Claude Artifact, not a repo file — it isn't tracked by git and won't show up in `git log`/`git status`; it must be shared from its own Share menu for anyone besides the owner to open it
 
 ## What's NOT done / open decisions
 
@@ -47,11 +47,10 @@ Read in this order:
   2. **Gallery scope:** is the gallery purely marketing (showcasing what students make, no transactions), or should visitors eventually be able to buy select original pieces? The backlog treats art e-commerce as an explicit future-growth item, not MVP, unless the owner says otherwise.
 - [ ] **The studio's real name, branding, actual photography, and real copy don't exist yet** — everything in this repo is placeholder/example content ("Bloom & Brush" included)
 - [ ] **No hosting or deployment has been set up**
-- [ ] **Design canvas artboards may not be finished** — verify directly before relying on them (see "Where to look" / "What's completed" above)
 
 ## Suggested next steps
 
-1. Confirm the Design canvas is actually finished (all 6 artboards), then review both directions — spec in `docs/DESIGN.md` plus mockups together — as a set.
+1. Review both directions — spec in `docs/DESIGN.md` plus the [Design canvas](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu) mockups together — as a set. If sharing this with the studio owner, share the canvas from its own Share menu first (it's private by default).
 2. Get the studio owner's answers to the two open questions above; they materially change scope.
 3. Pick or blend a design direction based on the owner's reaction and those answers.
 4. Confirm the MVP ("Must have") scope in `docs/BACKLOG.md` against real budget/timeline.
