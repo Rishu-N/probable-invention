@@ -2,7 +2,12 @@
 
 Two designer agents each produced an independent, fully-realized visual direction — briefed with the same brand constraints (bright, white/off-white base, pink + purple accents) and the findings in [`RESEARCH.md`](RESEARCH.md), but told not to converge with each other. This document is the full written spec for both (source of truth for exact hex values, type scales, and component rules). The corresponding visual mockups (style guide + homepage + gallery for each direction, side by side) live on the **[Design canvas](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu)**.
 
-Neither direction is "the" answer — see [`../README.md`](../README.md) for how to compare and choose (or blend) them.
+**Decision: Direction A ("Soft & Painterly") has been chosen.** Direction B stays below for reference. Two things were added on top of the original spec after that decision — both apply to Direction A only:
+
+- **A Teacher Gallery**, alongside the Student Gallery: a separate page structured by instructor (a short bio block per teacher, then a row of their own pieces), distinct from the student-work grid — this was "Could have" territory in `BACKLOG.md` §3.6 ("instructor's own portfolio samples, clearly distinguished from the student gallery") and is now a confirmed page, not just a nice-to-have.
+- **Motion and interaction**: sections reveal with a subtle scroll-linked fade/rise (CSS `animation-timeline: view()`, no JavaScript required — degrades gracefully to a normal one-time fade-in on browsers that don't support it) rather than appearing all at once; and the homepage carries a small collage of gallery-piece thumbnails tucked into its edges at a few scroll depths, their order shuffled client-side on each load, each linking through to that piece's Artwork Detail page. Neither changes the palette/type/component rules below — they're additions to the existing system, not a new one.
+
+The [Design canvas](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu) now carries both: the original static comparison artboards (style guide + homepage + gallery, ×2 directions) AND a live, clickable Direction A prototype (Home, Classes, Student Gallery, Teacher Gallery, About, Contact, Artwork Detail) built on this spec.
 
 ---
 

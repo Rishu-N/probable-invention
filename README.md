@@ -7,7 +7,7 @@
 A marketing + gallery website for a real-world (physical) art studio. The site needs to:
 
 1. **Advertise in-person art classes/workshops** — schedule, pricing, enrollment/inquiry.
-2. **Show a gallery of artwork previously made in real classes** — photographed physical art (paintings, ceramics, etc.), not digital/stock work.
+2. **Show a gallery of artwork previously made in real classes** — photographed physical art (paintings, ceramics, etc.), not digital/stock work. This includes a **Student Gallery** and a separate **Teacher Gallery** for the instructors' own work.
 3. **Let an admin upload new gallery photos** — no-code, low-friction, from a phone.
 4. **Show contact details** — address, hours, phone, email, a way to ask a question.
 
@@ -29,6 +29,8 @@ This phase used five parallel agents, run in two waves, to avoid one perspective
 
   Both directions are laid out side by side as artboards on the Design canvas so they can be compared directly: **[Design canvas →](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu)**
 
+**Decision:** Direction A ("Soft & Painterly") has been chosen. The canvas now also includes a live, clickable prototype of the full site in that direction — real navigation across separate pages/tabs (Home, Classes, Student Gallery, Teacher Gallery, About, Contact, Artwork Detail), scroll-reveal animation on each section, and a randomized collage of gallery-piece thumbnails tucked into the homepage's edges that link through to an artwork's detail page when clicked. Direction B stays on the canvas as reference. Every artwork photo, class, price, and person named in the prototype is placeholder content.
+
 ## Open questions for the studio owner
 
 Both BAs independently flagged the same two decisions as things only the business owner can settle — the backlog is written to work either way, but the answer changes several "Should" items into "Must" items:
@@ -38,7 +40,7 @@ Both BAs independently flagged the same two decisions as things only the busines
 
 ## Next steps
 
-1. Owner reviews the two open questions above and the two design directions on the canvas, and picks (or blends) a direction.
-2. Confirm the MVP ("Must have") scope in [`docs/BACKLOG.md`](docs/BACKLOG.md) against real budget/timeline.
+1. Owner reviews the interactive Direction A prototype on the canvas and answers the two open questions above.
+2. Confirm the MVP ("Must have") scope in [`docs/BACKLOG.md`](docs/BACKLOG.md) against real budget/timeline — including the new Teacher Gallery page.
 3. Pick a tech stack sized for a small business (see NFR/hosting notes in the backlog — low-maintenance managed hosting is recommended over self-managed servers).
 4. Begin build.

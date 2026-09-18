@@ -66,9 +66,16 @@ Both BAs flagged the same dependencies between their lanes; reconcile these duri
 - **Could:** student-progress/before-after storytelling; distinguish instructor's own work from student work; zoom/pan on high-res images.
 - **Won't:** purchase/checkout for original art pieces (see open question above).
 
+### 3.5a Teacher Gallery (confirmed addition)
+Originally scoped as a "Should have" under About (below) — now confirmed as its own page, separate from the Student Gallery in §3.5, per the studio owner's direction.
+- **Must:** a distinct page from the Student Gallery, structured by instructor (short bio block per teacher, then a row of their own pieces) rather than one undifferentiated grid — this is what makes it read as "the studio's own portfolio" rather than a re-skinned student gallery; each piece links to its Artwork Detail page the same way a Student Gallery piece does.
+- **Should:** cross-links both ways — a "See [instructor]'s work →" link from their bio on the About page, and a "Looking for our instructors' own work? →" link from the Student Gallery.
+- **Could:** per-instructor filtering once there are more than 2-3 teachers; teacher pieces use the same Available/Sold/Not for Sale field as student pieces (§2's taxonomy) rather than a separate content model.
+- See `docs/DESIGN.md`'s Direction A addendum and the Design canvas's `TeacherGallery.dc.html` artboard for the visual treatment.
+
 ### 3.6 Instructor / About Page
 - **Must:** studio story/mission; instructor bio(s) with photo, background, teaching style; real photos of the physical space; CTA to relevant classes.
-- **Should:** instructor's own portfolio samples (clearly distinguished from student gallery); explicit studio values ("no experience necessary," "all ages welcome"); "meet the team" treatment if multiple instructors.
+- **Should:** ~~instructor's own portfolio samples (clearly distinguished from student gallery)~~ — superseded by the confirmed Teacher Gallery page in §3.5a; About now just links out to it. Also: explicit studio values ("no experience necessary," "all ages welcome"); "meet the team" treatment if multiple instructors.
 - **Could:** instructor intro video; press mentions, years in business, credentials.
 - **Won't:** separate full profile pages per instructor with their own booking/gallery (over-engineered for a small single-location studio at launch).
 

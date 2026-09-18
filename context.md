@@ -4,7 +4,7 @@ Read this first. This is a status document, not a design/content doc — it orie
 
 ## What this project is
 
-"Bloom & Brush Art Studio" (an explicit placeholder name, not the real studio's) is the planning and early-design phase for a marketing + gallery website for a real, physical art studio. The site needs to advertise in-person art classes, showcase a gallery of real photographed student/instructor artwork, let an admin upload new gallery photos from a phone, and show contact details — in a bright, white/off-white brand with pink and purple accents. As of now, this repo holds only planning documents: no code, no chosen tech stack, and no finalized design direction.
+"Bloom & Brush Art Studio" (an explicit placeholder name, not the real studio's) is the planning and early-design phase for a marketing + gallery website for a real, physical art studio. The site needs to advertise in-person art classes, showcase a **Student Gallery** and a separate **Teacher Gallery** of real photographed artwork, let an admin upload new gallery photos from a phone, and show contact details — in a bright, white/off-white brand with pink and purple accents, split across multiple linked pages (Home, Classes, Student Gallery, Teacher Gallery, About, Contact, Artwork Detail). The visual direction has been chosen ("Soft & Painterly," see below). As of now, this repo holds only planning documents plus a canvas prototype: no real code/tech stack exists yet.
 
 ## How this repo was built
 
@@ -25,8 +25,8 @@ Read in this order:
 | 1 | [`README.md`](README.md) | Project overview, brand direction, the two open questions for the studio owner, next steps | Fastest orientation to the whole project |
 | 2 | [`docs/RESEARCH.md`](docs/RESEARCH.md) | The research agent's full findings: real studio/gallery site patterns, 2025-2026 trends, typography/color/accessibility notes | Grounds the "why" behind the backlog and design choices below |
 | 3 | [`docs/BACKLOG.md`](docs/BACKLOG.md) | Both BAs' full backlogs: personas, user journeys, MoSCoW priorities, user stories, admin upload workflow, content taxonomy, NFRs | The feature scope of record — what the site needs to do |
-| 4 | [`docs/DESIGN.md`](docs/DESIGN.md) | Both designers' full visual specs: palette, type, layout, components, mood, for "Soft & Painterly" and "Bold & Modern Gallery" | The two visual directions to compare and choose (or blend) between |
-| — | [Design canvas ↗](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu) | 6 visual mockup artboards (style guide + homepage + gallery page, for each of the two directions, side by side) | See the two directions rendered, not just described in prose |
+| 4 | [`docs/DESIGN.md`](docs/DESIGN.md) | Both designers' full visual specs: palette, type, layout, components, mood, for "Soft & Painterly" (**chosen**) and "Bold & Modern Gallery" (reference) | The visual spec of record for the chosen direction |
+| — | [Design canvas ↗](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu) | 11 artboards: the original style guide + homepage + gallery mockup for each direction, PLUS a live, clickable Direction A prototype — Home, Classes, Student Gallery, Teacher Gallery, About, Contact, and Artwork Detail, with scroll-reveal animation and a randomized gallery-image collage on the homepage that links through to artwork details | See and click through the chosen direction as a real multi-page site, not just static images |
 
 ## What's completed
 
@@ -36,12 +36,14 @@ Read in this order:
 - [x] Designer 1's "Soft & Painterly" full visual spec (`docs/DESIGN.md`)
 - [x] Designer 2's "Bold & Modern Gallery" full visual spec (`docs/DESIGN.md`)
 - [x] All of the above written up, committed, and pushed to this repo
-- [x] Design canvas populated with all 6 artboards (style guide + homepage + gallery mockup, ×2 directions) — [view it here](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu). Note: the canvas is a private Claude Artifact, not a repo file — it isn't tracked by git and won't show up in `git log`/`git status`; it must be shared from its own Share menu for anyone besides the owner to open it
+- [x] Design canvas populated with all 6 comparison artboards (style guide + homepage + gallery mockup, ×2 directions) — [view it here](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu). Note: the canvas is a private Claude Artifact, not a repo file — it isn't tracked by git and won't show up in `git log`/`git status`; it must be shared from its own Share menu for anyone besides the owner to open it
+- [x] Direction A ("Soft & Painterly") chosen by the user; Direction B kept on the canvas for reference only
+- [x] Teacher Gallery added as a confirmed feature (separate from the Student Gallery), with its own page
+- [x] Direction A rebuilt as a live interactive prototype on the canvas: 7 linked pages (Home, Classes, Student Gallery, Teacher Gallery, About, Contact, Artwork Detail) with working cross-page navigation, CSS scroll-reveal animation on each section, and a homepage collage of gallery-piece thumbnails (order randomized client-side on load) that link through to an Artwork Detail page when clicked
 
 ## What's NOT done / open decisions
 
-- [ ] **No tech stack chosen**, and **no actual website code/scaffold exists** in this repo — it's planning docs only
-- [ ] **No decision made on which design direction to build** — "Soft & Painterly" vs. "Bold & Modern Gallery," or a blend of the two
+- [ ] **No tech stack chosen**, and **no actual website code/scaffold exists** in this repo — it's planning docs plus a Claude Artifact canvas prototype, not a buildable codebase. The canvas's `.dc.html` artboards are a proprietary Claude Artifact format for design review, not something a real site would be built from directly — treat them as a detailed visual/interaction spec to reimplement in whatever stack gets chosen, not as source to copy in.
 - [ ] **Two questions still need the real studio owner's input** (both BAs flagged these independently; the backlog works either way, but the answers flip several "Should" items to "Must" — wording below is ported directly from `README.md`, don't paraphrase it further):
   1. **Enrollment model:** a simple inquiry/reserve-request flow (studio confirms manually by phone/email — assumed for v1), or real-time paid booking/checkout at launch (e.g., if the studio already uses a tool like Acuity/Square)?
   2. **Gallery scope:** is the gallery purely marketing (showcasing what students make, no transactions), or should visitors eventually be able to buy select original pieces? The backlog treats art e-commerce as an explicit future-growth item, not MVP, unless the owner says otherwise.
@@ -50,9 +52,8 @@ Read in this order:
 
 ## Suggested next steps
 
-1. Review both directions — spec in `docs/DESIGN.md` plus the [Design canvas](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu) mockups together — as a set. If sharing this with the studio owner, share the canvas from its own Share menu first (it's private by default).
+1. Click through the Direction A prototype on the [Design canvas](https://claude.ai/artifact/ChQGpoHeDz7vHo8xWqfmZu) (Play/focused mode on each artboard) to sanity-check the navigation, scroll animation, and collage links. If sharing this with the studio owner, share the canvas from its own Share menu first (it's private by default).
 2. Get the studio owner's answers to the two open questions above; they materially change scope.
-3. Pick or blend a design direction based on the owner's reaction and those answers.
-4. Confirm the MVP ("Must have") scope in `docs/BACKLOG.md` against real budget/timeline.
-5. Choose a tech stack sized for a small business, per the NFR/hosting notes in `docs/BACKLOG.md` (favor low-maintenance managed hosting over self-managed servers).
-6. Scaffold the actual site and begin build.
+3. Confirm the MVP ("Must have") scope in `docs/BACKLOG.md` against real budget/timeline — including the new Teacher Gallery page and the interaction patterns (scroll-reveal, homepage collage) now baked into the design.
+4. Choose a tech stack sized for a small business, per the NFR/hosting notes in `docs/BACKLOG.md` (favor low-maintenance managed hosting over self-managed servers). The chosen stack needs real per-artwork routing (the prototype's Artwork Detail page is one static example standing in for a dynamic, per-artwork template).
+5. Scaffold the actual site and begin build, using `docs/DESIGN.md` and the canvas as the spec, not as source to copy in.
